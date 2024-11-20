@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENSAH Library</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <img src="https://ensah.ma/images/t1.png" alt="ENSAH Logo" id="school-logo">
+        <h1>ENSAH Library</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <form id="search-form">
+            <input type="text" placeholder="Search books..." id="search-bar">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    
+    <main>
+        <section id="featured-books">
+            <section id="main">
+                <h2 class="theMostread" id="dynamic-text1"></h2>
+            </section>
+            <div class="book-grid">
+                <div class="book-card" onclick="openBook('https://gosafir.com/mag/wp-content/uploads/2019/12/Tolkien-J.-The-lord-of-the-rings-HarperCollins-ebooks-2010.pdf')">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMGYrm6h2r4pdxpjCsd__olsJssmQeSRa72ljBSayECUibzlUK" alt="Book Cover">
+                    <h3>The Lord of the Rings</h3>
+                    <p>By JRR Tolkien.</p>
+                </div>
+                <div class="book-card"  onclick="openBook('https://www.raio.org/TKMFullText.pdf')">
+                    <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR819TtvIV0JJ5_Wzzfcnk3y2eXfPpamZmdbrg5ofv0Ydafpw_f" alt="Book Cover">
+                    <h3>To Kill a Mockingbird</h3>
+                    <p>By Harper Lee</p>
+                </div>
+                <div class="book-card"  onclick="openBook('https://www.planetebook.com/free-ebooks/1984.pdf')">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeglXlBmm240qQ70HEi6CpdgjyevAGT78Vo8iOVtsLnkiDw5pb" alt="Book Cover">
+                    <h3>1984</h3>
+                    <p>By Eric Arthur Blair</p>
+                </div>
+                <div class="book-card"  onclick="openBook('http://www.sxcsrannalibrary.co.in/sites/default/files/ONE%20HUNDRED%20YEARS%20OF%20SOLITUDE-MARQUEZ.pdf')">
+                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLzJs4gIdQcdCfadAkE27-421sb-YA2LIsi0dILyydMAH8Xj_A ">
+                    <h3>One Hundred Years of Solitude</h3>
+                    <p>By Gabriel García Márquez</p>
+                </div>
+                <div class="book-card"  onclick="openBook('https://giove.isti.cnr.it/demo/eread/Libri/joy/Pride.pdf')"> 
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0uG-djByLShtWzvFjObVikD15TOCSROQ-oFI6Yb9Asq5X5_hh">
+                    <h3>Pride and Prejudice</h3>
+                    <p>By Jane Austen</p>
+                </div>
+                <div class="book-card"  onclick="openBook('https://mrbeland.weebly.com/uploads/3/0/5/5/30558007/lolita.pdf')">
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRikRhFvkJtM_NMAd5dClj-jUefW4KhAqRpN1oc8piaGpu20xS" alt="Book Cover">
+                    <h3>Lolita</h3>
+                    <p>By Vladimir Nabokov</p>
+                </div>
+                <div class="book-card" onclick="openBook('https://www.gutenberg.org/files/28054/old/28054-pdf.pdf ')">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBKK6m4gnL5ua3JUwh4cR9vZ-zndWyCkxJiqu0n0jb7qi-8lKp" alt="Book Cover">
+                    <h3>The Brothers Karamazov</h3>
+                    <p>By Fiodor Dostoïevski</p>
+                </div>
+                <div class="book-card"  onclick="openBook('https://www.planetpublish.com/wp-content/uploads/2011/11/Crime_and_Punishment_T.pdf')">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc2U33c3UQcX8eYEPmqLInR6PYuooj3Qmd8S5XQZ4-SmI-vk-B" alt="Book Cover">
+                    <h3>Crime and Punishment</h3>
+                    <p>By Fiodor Dostoïevski</p>
+                </div>
+                <div class="book-card"  onclick="openBook('https://beq.ebooksgratuits.com/classiques/Kafka_La_metamorphose.pdf')">
+                  <img src="https://m.media-amazon.com/images/I/61duMveetsL._AC_UF894,1000_QL80_.jpg" alt="Book Cover">
+                  <h3>Metamorphosis</h3>
+                  <p>By Franz Kafka</p>
+              </div>
+                <div class="book-card"  onclick="openBook('https://ia803401.us.archive.org/23/items/beyond-good-and-evil_202105/Beyond%20good%20and%20evil.pdf')">
+                  <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROHndw6ETe59QdBCJXUGCeQPEqGDBcdznMObeugStdegOIn45W" alt="Book Cover">
+                  <h3>Beyond Good and Evil</h3>
+                  <p>By Friedrich Nietzsche</p>
+              </div>
+                <div class="book-card"  onclick="openBook('https://books.google.com/books/about/Why_I_Am_so_Clever.html?id=7sGzCgAAQBAJ')">
+                  <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKJpIxRkJyJpZpPw1CsSZ-tYNUC1OG3-RR_8F_DF8rtuCvhGAF" alt="Book Cover">
+                  <h3>Why I Am So Clever</h3>
+                  <p>By Friedrich Nietzsche</p>
+              </div>
+                <div class="book-card"  onclick="openBook(' ')">
+                  <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsRl6NPtoK8o1TWkYmVUuiki2fcKnEAWZu7Vxir4MqSvs-XBSw" alt="Book Cover">
+                  <h3>The Bell Jar</h3>
+                  <p>By Sylvia Plath </p>
+              </div>
+                <div class="book-card"  onclick="openBook('https://gallica.bnf.fr/ark:/12148/bpt6k54008103.image.pdf')">
+                  <img src="https://www.puf.com/sites/puf/files/styles/large/public/pim_images/13060871.jpg?itok=QC9I4ma5" alt="Book Cover">
+                  <h3>Critique de la raison pure</h3>
+                  <p>By Emmanuel Kant</p>
+              </div>
+                <div class="book-card"  onclick="openBook('https://www.cimat.mx/ciencia_para_jovenes/bachillerato/libros/%5BKernighan-Ritchie%5DThe_C_Programming_Language.pdf')">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/The_C_Programming_Language%2C_First_Edition_Cover.svg/220px-The_C_Programming_Language%2C_First_Edition_Cover.svg.png" alt="Book Cover">
+                  <h3>The C programming language</h3>
+                  <p>By Brian Kernighan and Dennis Ritchie</p>
+              </div>
+              <div class="book-card" onclick="openBook('https://edisciplinas.usp.br/pluginfile.php/5464110/mod_book/chapter/23393/Thermodynamics%20an%20Engineering%20Approach.pdf')">
+                <img src=" https://m.media-amazon.com/images/I/71Y8pVAV3wL._AC_UF1000,1000_QL80_.jpg" alt="Book Cover">
+                <h3>Th-dynamics: An Engineering Approach</h3>
+                <p>By Yunus Çengel.</p>
+            </div>
+            
+            <div class="book-card" onclick="openBook('https://civilenglineering.wordpress.com/wp-content/uploads/2014/10/the-civil-engineering-handbook.pdf')">
+                <img src="https://m.media-amazon.com/images/I/81LK4L3oaDL._AC_UF1000,1000_QL80_.jpg" alt="Book Cover">
+                <h3>The Civil Engineering Handbook</h3>
+                <p>By Wai-Fah Chen.</p>
+            </div>
+            
+            <div class="book-card" onclick="openBook('https://joycelau99.files.wordpress.com/2020/10/introduction-to-environmental-engineering.pdf')">
+                <img src="https://m.media-amazon.com/images/I/91PzuGaZ3BL.jpg" alt="Book Cover">
+                <h3>Introduction to Environmental Engineering and Science</h3>
+                <p>By Gilbert M. Masters.</p>
+            </div>
+            
+            <div class="book-card" onclick="openBook('https://ia802308.us.archive.org/19/items/c-26_20211009/C26.pdf')">
+                <img src="https://booksondemand.ma/cdn/shop/products/ThePragmaticProgrammeryourjourneytomastery_20thAnniversaryEdition_2ndEdition_AndrewHuntDavidThomas_Huntetc._z-lib-min.jpg?v=1659013154" alt="Book Cover">
+                <h3>The Pragmatic Programmer</h3>
+                <p>By Andy Hunt and Dave Thomas.</p>
+            </div>
+            
+            <div class="book-card" onclick="openBook('https://dl.leneveu.fr/public/Coder_Proprement.pdf')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr-_Pc7knpGuXrBxiyLc0JbR81q9Nmu5SopA&s" alt="Book Cover">
+                <h3>Coder proprement</h3>
+                <p>By Robert C. Martin.</p>
+            </div>
+            <div class="book-card" onclick="openBook('https://dl.icdst.org/pdfs/files3/ad7608c18e740b0e402c025fa3187de8.pdf')">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqplIYZudcwPHfXZt5_AlSHmX1F1xVc3kXKuVj2q3urH4g0Tiy" alt="Book Cover">
+                <h3>Mechanical Engineering Design</h3>
+                <p>By Joseph Edward Shigley </p>
+            </div>
+            <div class="book-card" onclick="openBook('https://anupturnedworld.files.wordpress.com/2016/06/callister-materials-science-and-engineering.pdf')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9DxEBLNUe91Vc4wOKJ0UscEHFYCt4yXompjQz1srPH9AgqJg-" alt="Book Cover">
+                <h3>Materials Science and Engineering</h3>
+                <p>By William D. Calliste</p>
+            </div>
+            
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 ENSAH e-Library. All rights reserved.</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
